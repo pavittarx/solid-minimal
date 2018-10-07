@@ -1,0 +1,17 @@
+{
+  "name": "solid-minimal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "browser-sync": "^2.24.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --config server.js"
+  },
+  "repository": "https://github.com/pavittarx/minimal-solid.git",
+  "author": "pavittarx <pavittarx@gmail.com>",
+  "license": "ISC"
+}
