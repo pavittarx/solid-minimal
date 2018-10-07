@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+header{
+    color:#fffccc;
+    background-color:#222222;
+    padding:15px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style for IDP form*/
+
+#idp-form{
+    display: none;
+    text-align: center;
+    color:#424242;
+}
+
+#idp-form label{
+    display: block;
+    font-size: 18px;
+    padding:10px;
+}
+
+#idp-form input{
+    outline:0;
+    border:3px solid #e0e0e0;
+    padding:5px 15px;
+    font-size:20px;
+    border-radius:8px;
+    text-align: center;
+}
+
+#logout-button{
+    display: none;
+}

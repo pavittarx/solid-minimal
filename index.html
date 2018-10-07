@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>MySolid APP</title>
+  <link rel="manifest" src="/assests/manifest.json">
+  <link rel="stylesheet" href="/assests/css/main.css">
+</head>
+
+<body>
+
+  <header> Profile Viewer </header>
+
+  <form id="idp-form">
+    <label for="idp-uri">IDP: </label>
+    <input id="idp-uri" type="text" placeholder="https://stripe.community">
+  </form>
+
+  <button id="logout-button"> Log Out </button> 
+    
+  </section>
+  <section class="external-scripts">
+    <!-- solid-auth-client CDN : authenticate, read/write data to pod -->
+    <script src="https://cdn.rawgit.com/solid/solid-auth-client/gh-pages/dist/solid-auth-client.bundle.js"></script>
+    <!-- RDFlib.js CDN : to manipulate the data-->
+    <script src="https://cdn.rawgit.com/linkeddata/rdflib.js/gh-pages/dist/rdflib.min.js"></script>
+    <!--Internal Script-->
+    <script src="./assests/js/script.js"> </script>
+  </section>
+
+</body>
+
+</html>
