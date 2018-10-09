@@ -1,6 +1,8 @@
 # Profile Viewer: Minimal Solid App
 A minimal profile viewer solid app. 
 
+The preview for solid-minimal is available at: pavittarx.github.io/solid-minimal
+
 ## Description 
 A solid app that allows a solid user to view and edit his solid profile.
 
