@@ -33,7 +33,7 @@ If you don't know what solid is? Visit: [solid.mit.edu](https://solid.mit.edu)
 ## Feature list 
 |Status| Feature |
 |:---:|:---:|
-|Needs Fixing| Log in to a solid pod|
+|OK 200| Log in to a solid pod|
 |OK 200 |Log out of a Solid pod|
 |Not Implemented| Preview Profile Information|
 |Not Implemented|Edit Profile Information|

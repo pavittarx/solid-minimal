@@ -1,7 +1,7 @@
 {
   "name": "solid-minimal",
   "version": "1.0.0",
-  "description": "",
+  "description": "A minimal profile viewer solid app.",
   "main": "main.js",
   "dependencies": {
     "browser-sync": "^2.24.7"
@@ -11,7 +11,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --config server.js"
   },
-  "repository": "https://github.com/pavittarx/minimal-solid.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavittarx/minimal-solid.git"
+  },
   "author": "pavittarx <pavittarx@gmail.com>",
-  "license": "ISC"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pavittarx/minimal-solid/issues"
+  },
+  "homepage": "https://github.com/pavittarx/minimal-solid#readme"
 }

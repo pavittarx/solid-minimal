@@ -4,11 +4,12 @@ body{
 }
 
 header{
-    color:#fffccc;
+    color:#d3d3d3;
     background-color:#222222;
     padding:15px 20px;
     margin-bottom: 20px;
     text-align: center;
+    font-size: 24px;
 }
 
 /* Style for IDP form*/
@@ -16,24 +17,29 @@ header{
 #idp-form{
     display: none;
     text-align: center;
-    color:#424242;
+    color:#222222;
 }
 
 #idp-form label{
-    display: block;
-    font-size: 18px;
+    display:block;
+    color:#333333;
+    font-size: 20px;
     padding:10px;
 }
 
 #idp-form input{
-    outline:0;
-    border:3px solid #e0e0e0;
-    padding:5px 15px;
-    font-size:20px;
-    border-radius:8px;
-    text-align: center;
+    padding:10px 15px;
+    border:1px solid #d2d2d2;
+    color: #2d2d2d;
 }
+
+/* Styles for Logout Button */ 
 
 #logout-button{
     display: none;
+    border:0;
+    text-align:center;
+    padding:10px 18px;
+    background-color:#222222;
+    color:#d3d3d3;
 }
