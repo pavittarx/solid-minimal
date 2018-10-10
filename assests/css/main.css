@@ -43,3 +43,24 @@ header{
     background-color:#222222;
     color:#d3d3d3;
 }
+
+/* extras */
+
+a{
+    text-decoration:none;
+    color:#1976d2;
+}
+
+.extra-links{
+    padding:40px 50px;
+    text-align:center;
+}
+
+.extra-links > a{
+   display:inline-block;
+   background-color:#1976d2;
+   color:#d3d3d3;
+   margin:20px 15px;
+   padding:15px 20px;
+}
+
