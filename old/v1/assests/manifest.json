@@ -1,0 +1,6 @@
+{
+    "short_name": "solid-minimal",
+    "name": "Solid Sample App",
+    "display":"standalone",
+    "background-color":"#3367D6"   
+}
