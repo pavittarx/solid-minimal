@@ -1,48 +1,150 @@
+/* Styles for solid-minimal */
 body{
     margin:0;
     padding:0;
 }
 
-header{
+/* the main header for the page */
+body > header{
     color:#d3d3d3;
     background-color:#222222;
     padding:15px 20px;
-    margin-bottom: 20px;
     text-align: center;
     font-size: 24px;
 }
 
-/* Style for IDP form*/
-
-#idp-form{
-    display: none;
-    text-align: center;
-    color:#222222;
+/* displays form and other elements to help log in the user to his pod*/
+#login-section{
+    height:150px;
+    padding:15px 5%;
+    background-color:#f0f0f0;
+    text-align:center;
 }
 
-#idp-form label{
+/* header: login-section */
+#login-section header{
+    text-align:center;
+    font-size:larger;
+}
+
+/* main: login-section */
+#login-section main{
+    margin:30px 0;
+}
+
+/* dropdown: login-section */
+#dropdown{
+    cursor:pointer;
+    display:inline-block;
+    position:relative;
+    margin:auto;
+}
+
+/* default text: dropdown list */
+#drop-placeholder{
+    border:1px solid #223322;
+    display:inline-block;
+    padding:5px 10px;
+}
+
+/* dropdown list container: login-section*/
+.idp-provider{
+    display:none; 
+    position:absolute;
+    top:-50%;
+    left:-50%;
+    background-color:#fafafa;
+    color:#232323;
+    padding:0;
+}
+
+/* list: idp providers*/
+.idp-provider span{
     display:block;
-    color:#333333;
-    font-size: 20px;
-    padding:10px;
+    padding:10px 30px;
+    text-align:left;
+    border-bottom:1px solid #223322;
 }
 
-#idp-form input{
+/* removes bottom border from last element */
+.idp-provider span:last-child{
+    border-bottom:0;
+}
+
+/* hover: idp-providers list */
+.idp-provider span:hover{
+    background-color:#223322;
+    color:#fafafa;
+    border:inherit;
+}
+
+/* displays idp provider list on hover: dropdown */
+#dropdown:hover > .idp-provider{
+    display:block;
+}
+
+
+/* Style for IDP form*/
+#login-form{
+    display:inline-block;
+    text-align: center;
+    color:#223322;
+}
+
+/* gets the idp providers url */
+#login-form input{
+    display: inline;
+    margin-left:10px;
     padding:10px 15px;
-    border:1px solid #d2d2d2;
-    color: #2d2d2d;
+    background-color:inherit;
+    border:0;
+    outline:0;
+    border-bottom:1px solid #d3d3d3;
+    color: #223322;
 }
 
-/* Styles for Logout Button */ 
+/* submit button: login-form */
+#login-form input[type="submit"]{
+    background-color:#223322;
+    color:#d3d3d3;
+}
+
+/* hover: login form submit button */
+#login-form input[type="submit"]:hover{
+    background-color:#1976d2;
+    color:#d3d3d3;
+}
+
+/* popup login:   */
+#popup-login{
+    display:block;
+    margin:30px;
+}
+
+#popup-login button{
+    cursor:pointer;
+    border:0;
+    background-color:#1976d2;
+    color:#d3d3d3;
+    padding:10px 25px;
+
+}
+
+#popup-login button:hover{
+    background-color:#223322;
+    color:#d3d3d3;
+
+}
 
 #logout-button{
     display: none;
     border:0;
     text-align:center;
     padding:10px 18px;
-    background-color:#222222;
+    background-color:#223322;
     color:#d3d3d3;
 }
+
 
 /* extras */
 
@@ -52,7 +154,7 @@ a{
 }
 
 .extra-links{
-    padding:40px 50px;
+    padding:20px 50px;
     text-align:center;
 }
 
@@ -63,4 +165,3 @@ a{
    margin:20px 15px;
    padding:15px 20px;
 }
-

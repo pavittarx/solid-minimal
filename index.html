@@ -3,28 +3,43 @@
 
 <head>
   <meta charset="utf-8">
-  <title>pavittarx/solid-minimal-v1</title>
-  <link rel="manifest" src="assests/manifest.json">
-  <link rel="stylesheet" href="assests/css/main.css">
+  <title>pavittarx/solid-minimal</title>
+  <link rel="manifest" src="/assests/manifest.json">
+  <link rel="stylesheet" href="/assests/css/main.css">
 </head>
 
 <body>
 
   <header> solid-minimal </header>
 
-  <form id="idp-form">
-    <label for="idp-uri">Input IDP (Idenitiy Provider) URL </label>
-    <input id="idp-uri" type="text" placeholder="https://solid.community">
-  </form>
-
-  <button id="logout-button"> Log Out </button> 
-    
+  <section id="login-section">
+    <header> Choose your IDP </header>
+    <main class="login-main">
+      <div id="dropdown">
+        <div id="drop-placeholder"> Choose </div>
+        <div class="idp-provider">
+          <span id="solid-community"> https://solid.community </span>
+          <span id="inrupt-net"> https://inrupt.net </span>
+          <span id="solidtest-space"> https://solidtest.space </span>
+        </div>
+      </div>
+      <form id="login-form">
+        <input id="idp-uri" type="text" placeholder="Custom IDP">
+        <input type="submit" value="Login">
+      </form>
+      <div id="popup-login">
+        <button id="popup-login-button">Use Popup Login</button>
+      </div>
+    </main>
   </section>
 
   <section class="extra-links">
-    <a href="https://github.com/pavittarx/solid-minimal/tree/solid-minimal-v1"> View Source for this version </a>
+    <a href="https://github.com/pavittarx/solid-minimal"> View Source </a>
+    <a href="https://pavittarx.github.io/old-versions/v1.html"> Preview Last Version </a>
     <div> Did you like it? Give this project a star on <a href="https://github.com/pavittarx/solid-minimal">Github</a>.</div>
   </section>
+
+  <button id="logout-button"> Log Out </button>
 
   <section class="external-scripts">
     <!-- solid-auth-client CDN : authenticate, read/write data to pod -->
@@ -32,7 +47,7 @@
     <!-- RDFlib.js CDN : to manipulate the data-->
     <script src="https://cdn.rawgit.com/linkeddata/rdflib.js/gh-pages/dist/rdflib.min.js"></script>
     <!--Internal Script-->
-    <script src="assests/js/script.js"> </script>
+    <script src="./assests/js/script.js"> </script>
   </section>
 
 </body>
